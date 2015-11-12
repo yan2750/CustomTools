@@ -14,6 +14,8 @@
 		65D56B8D1BF48E52007286CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D56B8B1BF48E52007286CE /* LaunchScreen.storyboard */; };
 		65D56B981BF48E52007286CE /* CustomToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D56B971BF48E52007286CE /* CustomToolsTests.swift */; };
 		65D56BA31BF48E52007286CE /* CustomToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D56BA21BF48E52007286CE /* CustomToolsUITests.swift */; };
+		65D56BB21BF49179007286CE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D56BB11BF49179007286CE /* SignInViewController.swift */; };
+		65D56BB51BF49502007286CE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D56BB41BF49502007286CE /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		65D56B9E1BF48E52007286CE /* CustomToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D56BA21BF48E52007286CE /* CustomToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolsUITests.swift; sourceTree = "<group>"; };
 		65D56BA41BF48E52007286CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D56BB11BF49179007286CE /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		65D56BB41BF49502007286CE /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		65D56B811BF48E52007286CE /* CustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				65D56BB31BF494E2007286CE /* View */,
+				65D56BB01BF490FA007286CE /* ViewController */,
 				65D56B821BF48E52007286CE /* AppDelegate.swift */,
 				65D56B841BF48E52007286CE /* ViewController.swift */,
 				65D56B861BF48E52007286CE /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				65D56BA41BF48E52007286CE /* Info.plist */,
 			);
 			path = CustomToolsUITests;
+			sourceTree = "<group>";
+		};
+		65D56BB01BF490FA007286CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65D56BB11BF49179007286CE /* SignInViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		65D56BB31BF494E2007286CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65D56BB41BF49502007286CE /* SignInView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 			files = (
 				65D56B851BF48E52007286CE /* ViewController.swift in Sources */,
 				65D56B831BF48E52007286CE /* AppDelegate.swift in Sources */,
+				65D56BB51BF49502007286CE /* SignInView.swift in Sources */,
+				65D56BB21BF49179007286CE /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +508,7 @@
 				65D56BA91BF48E52007286CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65D56BAA1BF48E52007286CE /* Build configuration list for PBXNativeTarget "CustomToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				65D56BAC1BF48E52007286CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65D56BAD1BF48E52007286CE /* Build configuration list for PBXNativeTarget "CustomToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +526,7 @@
 				65D56BAF1BF48E52007286CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

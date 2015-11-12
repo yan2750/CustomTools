@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+       let signInView = SignInViewController()
+        
+       let nav = UINavigationController(rootViewController: signInView)
+        let navItem : UITabBarItem = UITabBarItem(title: "签到", image: UIImage(named: )), selectedImage: <#T##UIImage?#>))
+        
+        
         return true
     }
 
