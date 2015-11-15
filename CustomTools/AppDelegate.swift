@@ -15,12 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-       let signInView = SignInViewController()
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // Override point for customization after application launch.
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
         
-       let nav = UINavigationController(rootViewController: signInView)
-        let navItem : UITabBarItem = UITabBarItem(title: "签到", image: UIImage(named: )), selectedImage: <#T##UIImage?#>))
+       let signInVC = SignInViewController()
+       let nav_1 = UINavigationController(rootViewController: signInVC)
+       let signInItem : UITabBarItem = UITabBarItem(title: "签到", image: UIImage(named: "loginIn"), selectedImage: UIImage(named: "loginIn"))
+        nav_1.tabBarItem = signInItem
         
         
+        let graphVC = GrapAnalysisViewController()
+        let nav_2 = UINavigationController(rootViewController: graphVC)
+        let graphItem : UITabBarItem = UITabBarItem(title: "图表", image: UIImage(named: "loginIn"), selectedImage: UIImage(named: "loginIn"))
+        nav_2.tabBarItem = graphItem
+        
+        let tarBar = UITabBarController()
+        tarBar.viewControllers = [nav_1,nav_2]
+        tarBar.selectedIndex = 0
+        self.window?.rootViewController = tarBar
         return true
     }
 
